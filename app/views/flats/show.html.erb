@@ -1,0 +1,47 @@
+<div class="flat-img"
+  style="background-image: url('https://source.unsplash.com/1920x360/?home')">
+</div>
+
+<div class="container show-cont mt-3 col-lg-6 col-md-8 col-sm-12">
+  <div class="row">
+    <div class="d-flex justify-content-between"></div>
+      <div class="col-8">
+        <div class="box-shadow flat-main">
+          <h1><%= @flat.name %></h1>
+          <p><%= @flat.address %></p>
+        </div>
+        <div class="box-shadow flat-description">
+          <h2>A bit more about this flat...</h2>
+          <p><%= @flat.description %></p>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="box-shadow flat-booking">
+          <h5>Book this place!</h5>
+          <p>From:</p>
+          <p>To:</p>
+          <a href="#" class='btn btn-success'>Book</a>
+        </div>
+
+        <div class="box-shadow">
+          <h4>Details</h4>
+          <div class="flat-details">
+            <p><i class="fas fa-users"></i></p>
+            <p><%= @flat.number_of_guests %></p>
+            <p><i class="fas fa-dollar-sign"></i></p>
+            <p><%= @flat.price_per_night %></p>
+          </div>
+        </div>
+
+        <div class="box-shadow social">
+          <h6>Share</h6>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-pinterest-square"></i>
+          <i class="fas fa-envelope-square"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.card {
+  min-height: 300px;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  background-color: #EBECEC;
+  box-shadow: 1px 1px 5px lightgray;
+  h1, p {
+    padding: 24px;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    p {
+      padding: 8px;
+      margin: 0;
+    }
+  }
+  .more-info {
+    padding: 16px 24px;
+    background-color: white;
+    a {
+      display: inline-block;
+    }
+  }
+}

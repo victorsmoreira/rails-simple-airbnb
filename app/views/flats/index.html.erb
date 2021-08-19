@@ -1,9 +1,10 @@
-<h1>All our Flats</h1>
-<p>All <%= @flats.size %> flats.</p>
+<div class="container mt-3">
+  <h1>All our Flats</h1>
+  <p>All <%= @flats.size %> flats.</p>
 
-<div class="row">
-  <% @flats.each do |flat| %>
-    <div class="cards col-4">
+
+  <div class="cards-grid">
+    <% @flats.each do |flat| %>
       <div class="card">
         <h1><%= flat.name %></h1>
         <p><%= flat.address %></p>
@@ -14,9 +15,9 @@
           <p><%= flat.price_per_night %></p>
         </div>
         <div class="more-info">
-          <a href="#">More info</a>
+          <%= link_to 'More info', flat_path(flat) %>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

@@ -1,0 +1,22 @@
+.flat-img {
+  position: absolute;
+}
+
+.show-cont {
+  position: relative;
+  top: 260px;
+}
+
+.flat-details {
+  width: 100%;
+  display: flex;
+  p {
+    padding: 4px;
+    margin: auto 0;
+  }
+}
+
+.social > i {
+  font-size: 24px;
+  margin: 0 4px;
+}
